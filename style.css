@@ -39,7 +39,7 @@
   border: 1px solid white;
   min-width: 100px;
   min-height: 100px;
-  display: flexbox;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 50px;
@@ -47,11 +47,11 @@
 }
 
 .playerX {
-  color: cyan;
+  color: rgb(0, 255, 106);
 }
 
 .playerO {
-  color: rgb(34, 63, 63);
+  color: rgb(251, 255, 0);
 }
 
 .controls {
