@@ -1,7 +1,10 @@
-const tiles = Array.from(document.querySelectorAll(".tile"));
+const tiles = document.querySelectorAll(".tile");
 const playerDisplay = document.querySelector(".display-player");
 const reset = document.querySelector("#reset");
 const announcer = document.querySelector(".announcer");
+
+console.log(tiles);
+console.log(Array.from(tiles));
 
 let board = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
@@ -101,8 +104,9 @@ const userAction = (tile, index) => {
 };
 // Event listner on tiles
 tiles.forEach((tile, index) => {
-  console.log(tile[index]);
-  tile.addEventListener("click", userAction(tile, index));
+  console.log(tile);
+  console.log(index);
+  tile.addEventListener("click", () => userAction(tile, index));
 });
 
 // reset board function
