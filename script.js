@@ -25,7 +25,6 @@ const winningConditions = [
 ];
 
 // handle result validitaion fucntion
-
 function handleResultValidation() {
   let roundWon = false;
   for (let i = 0; i <= 7; i++) {
